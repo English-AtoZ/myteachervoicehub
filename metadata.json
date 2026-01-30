@@ -1,0 +1,8 @@
+
+{
+  "name": "Voice Translator Hub",
+  "description": "A versatile voice translation application that supports Hindi to English, English to Hindi, Hindi to Sanskrit, and provides a word-by-word English to Hindi translator with audio playback.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
