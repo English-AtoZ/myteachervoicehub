@@ -5,6 +5,7 @@ import LearnWithAudioEnglish from "./components/LearnWithAudioEnglish";
 import Audios3Bolkar from "./components/Audios3Bolkar";
 import HindiToSanskritAudio from "./components/HindiToSanskritAudio";
 
+
 const AD_URL = "https://www.effectivegatecpm.com/ynr4zqfyc?key=47c7532215e22f2958124a99aa5ab73e";
 
 type Page = "hindiToEnglish" | "englishToHindi" | "wordTranslator" | "hindiToSanskrit";
