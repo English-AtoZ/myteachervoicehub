@@ -5,7 +5,6 @@ import LearnWithAudioEnglish from "./components/LearnWithAudioEnglish";
 import Audios3Bolkar from "./components/Audios3Bolkar";
 import HindiToSanskritAudio from "./components/HindiToSanskritAudio";
 
-
 const AD_URL = "https://www.effectivegatecpm.com/ynr4zqfyc?key=47c7532215e22f2958124a99aa5ab73e";
 
 type Page = "hindiToEnglish" | "englishToHindi" | "wordTranslator" | "hindiToSanskrit";
@@ -74,7 +73,7 @@ const App: React.FC = () => {
     <main className="bg-slate-900 w-screen h-screen text-white font-sans">
       {!activePage ? (
         <div className="h-full flex flex-col justify-center items-center p-4">
-            <h1 className="text-2xl font-bold mb-8 text-center text-cyan-400">MyTeacher Voice Translator</h1>
+            <h1 className="text-4xl font-bold mb-8 text-center text-cyan-400">Voice Translator Hub</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-md">
                 <button 
                     onClick={() => handleOpen("hindiToEnglish")}

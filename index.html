@@ -1,31 +1,25 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyTeacher</title>
-
-    <!-- Tailwind CDN (warning ignore karo, error nahi hai) -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- React (ESM via importmap) -->
-    <script type="importmap">
-      {
-        "imports": {
-          "react": "https://esm.sh/react@18",
-          "react-dom/client": "https://esm.sh/react-dom@18/client"
-        }
-      }
-    </script>
-
-    <!-- Normal CSS only (NO tailwind import inside) -->
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
   <body>
     <div id="root"></div>
-
-    <!-- MUST be module -->
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
