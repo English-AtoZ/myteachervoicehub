@@ -2,24 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyTeacher</title>
-      <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React import map -->
     <script type="importmap">
       {
         "imports": {
-          "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-          "react/": "https://esm.sh/react@^19.2.4/",
-          "react": "https://esm.sh/react@^19.2.4"
+          "react": "https://esm.sh/react@18",
+          "react-dom/client": "https://esm.sh/react-dom@18/client"
         }
       }
     </script>
+
     <link rel="stylesheet" href="./index.css" />
   </head>
+
   <body>
     <div id="root"></div>
-    <script type="text/js" src="./index.js"></script>
+
+    <!-- ✅ THIS WAS THE ISSUE -->
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
